@@ -112,8 +112,9 @@ asyncio.run(main())
 
 # Support
 - https://discord.gg/PYfeSaDGPJ
+- Contact me on discord for further details. [@fardels](https://discord.com/users/1400048398417137734)
 
-## Buy Me A Coffee ☕?
+### Buy Me A Coffee ☕?
 ~ **Wallet Address:**
 - ltc: LbDG5BE3foVsfK6JRsSc7UtBVX4DqYYKXN
 
