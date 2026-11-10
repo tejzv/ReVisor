@@ -112,7 +112,7 @@ asyncio.run(main())
 
 # Support
 - https://discord.gg/PYfeSaDGPJ
-- Contact me on discord for further details. [@fardels](https://discord.com/users/1400048398417137734)
+- Contact me on discord for further details. [@sqnq](https://discord.com/users/987979957907116052)
 
 ### Buy Me A Coffee ☕?
 ~ **Wallet Address:**
