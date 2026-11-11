@@ -1,85 +1,98 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=180&section=header&text=Visor&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=ReVisor%20%E2%80%A2%20Visual%20Intelligence%2C%20OCR%20%26%20Translation%20Engine&descAlignY=62&descSize=17" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=190&section=header&text=ReVisor&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Visual%20Intelligence%20%E2%80%A2%20OCR%20%E2%80%A2%20Translation%20Engine&descAlignY=62&descSize=17" width="100%" />
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/Windows-Native_Launcher-0078D4?style=for-the-badge&logo=windows&logoColor=white)](#standalone-windows-executable)
-[![API](https://img.shields.io/badge/REST_API-Supported-009688?style=for-the-badge&logo=fastapi&logoColor=white)](#rest-api-server)
-[![License](https://img.shields.io/badge/License-MIT-238636?style=for-the-badge)](https://github.com/tejzv/ReVisor)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Instant+OCR+%E2%80%A2+100%2B+Languages+%E2%80%A2+In-Place+Image+Translation;Quick+%26+Detailed+Modes+with+Live+Terminal+Switching;Lightweight%2C+Unlimited+%26+100%25+Request-Based+Engine" alt="ReVisor Highlights" />
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows-revisor.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST_API-Enabled-009688?style=for-the-badge&logo=openapiinitiative&logoColor=white" />
+  <img src="https://img.shields.io/badge/Translate-100%2B_Languages-8957e5?style=for-the-badge&logo=googletranslate&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-238636?style=for-the-badge" />
+</p>
+
+<br />
+
+<img src="img/demo.gif" alt="ReVisor Live Showcase" width="840" />
 
 </div>
 
 ---
 
-## Overview
+## Why ReVisor?
 
-**Visor** (**ReVisor**) is a lightweight, unlimited-use, request-based visual intelligence engine combining fast OCR text extraction, multi-language text & in-place image translation, entity recognition, and contextual overview synthesis — with zero browser overhead.
+**ReVisor** (**Visor**) delivers ultra-fast OCR extraction, in-place image & text translation, visual entity recognition, and contextual overview synthesis in one lightweight, unlimited-use, purely request-based package — **zero browser automation, zero heavy runtimes.**
 
-| Capability | Details |
-| :--- | :--- |
-| **Quick & Detailed Modes** | Run in **Quick** (`-f`, default) for rapid results or **Detailed** (`-d`) for deeper multi-region analysis and rich contextual summaries. |
-| **Instant Mode Switching** | Press **`Tab`** or **`M`** inside the interactive terminal UI to toggle `Mode: Quick` ↔ `Mode: Detailed` on the fly. |
-| **Text & Image Translation** | Accepts language shortcuts (`en`, `es`, `ja`, `fr`) and full names (`English`, `Spanish`, `Japanese`) across 100+ languages. |
-| **Symmetrical `results/` Output** | Automatically saves clean before/after image pairs (`results/before1.png`, `results/result1.png`) and `results/results.txt`. |
-| **Batch, URL & REST API** | Process single files, folders, webpage/image URLs, URL lists, or host as a concurrent REST API server. |
-| **Zero-Config `.exe`** | Standalone Windows launcher (`revisor.exe`) handles automatic environment setup on first run. |
+<table>
+  <tr>
+    <td width="50%">
+      <h3>⚡ Quick Mode (<code>-f</code>, Default)</h3>
+      <ul>
+        <li>Sub-second OCR, entity recognition & concise summary</li>
+        <li>Built for high-volume CLI runs, batch jobs & APIs</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🧠 Detailed Mode (<code>-d</code>)</h3>
+      <ul>
+        <li>Deeper multi-region visual inspection & higher detail</li>
+        <li>Extended encyclopedic overview synthesis & metadata</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🌐 Text & Image Translation (<code>-t</code>)</h3>
+      <ul>
+        <li>Understands shortcuts (<code>es</code>, <code>fr</code>, <code>ja</code>) & full names (<code>Spanish</code>, <code>Japanese</code>)</li>
+        <li>Saves clean <code>beforeN.png</code> + <code>resultN.png</code> pairs & <code>results.txt</code> in <code>results/</code></li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🎛️ Live UI & Zero-Config <code>.exe</code></h3>
+      <ul>
+        <li>Press <code>Tab</code> or <code>M</code> in the interactive menu to switch <code>Quick</code> ↔ <code>Detailed</code> instantly</li>
+        <li>Standalone <code>revisor.exe</code> prepares the runtime automatically</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Standalone Windows Executable
+## Quick Start
 
-Run `revisor.exe` directly from your terminal with zero manual setup:
+### Option 1 — Standalone Windows Executable (`revisor.exe`)
 
 ```bash
-revisor.exe
-revisor.exe img/test.png
-revisor.exe img/test2.png -d
-revisor.exe img/test2.png -t Spanish
-revisor.exe img/test2.png -t es -tt
-revisor.exe img/test2.png -t fr -ti
-revisor.exe img/test.png --json
-revisor.exe --api
+revisor.exe                              # Interactive UI (press Tab or M to switch modes)
+revisor.exe img/test.png                 # Quick OCR + Overview
+revisor.exe img/test2.png -d             # Detailed deep visual analysis
+revisor.exe img/test2.png -t Spanish     # Translate & save before/after images + results.txt
+revisor.exe img/test2.png -t es -tt      # Text translation only -> results/results.txt
+revisor.exe img/test2.png -t fr -ti      # Image translation only -> results/beforeN.png & resultN.png
+revisor.exe img/test.png --json          # Machine-readable JSON output
+revisor.exe --api                        # Start REST API server on port 8000
 ```
 
----
-
-## CLI Usage
+### Option 2 — Python CLI
 
 ```bash
-# Quick mode (default)
 python revisor.py img/test.png
-
-# Detailed mode (deeper visual inspection & extended overview)
 python revisor.py img/test2.png -d
-
-# Translate image (saves results/beforeN.png, results/resultN.png & results/results.txt)
-python revisor.py img/test2.png -t Spanish
-
-# Text-only translation (results/results.txt) or Image-only translation (results/)
-python revisor.py img/test2.png -t es -tt
-python revisor.py img/test2.png -t es -ti
-
-# Save translated overlay to a custom file path
+python revisor.py img/test2.png -t Japanese
 python revisor.py img/test2.png -t es -to translated_image.png -y
-
-# Machine-readable JSON output
-python revisor.py img/test.png --json
-python revisor.py img/test2.png -d --json
-
-# Batch analyze or translate folders & URLs
 python revisor.py img/ -y
 python revisor.py img/ -t French -y
 python revisor.py https://example.com/image.png -y
 python revisor.py urls.txt -y
-
-# Launch REST API server or Interactive UI
 python revisor.py --api
-python revisor.py
 ```
 
-### Interactive Menu
+### Interactive Terminal Menu
 
-Press **`Tab`** or **`M`** on the menu to switch between **`Mode: Quick`** and **`Mode: Detailed`** immediately:
+Press **`Tab`** or **`M`** anytime on the main menu to toggle **`Mode: Quick`** ↔ **`Mode: Detailed`** immediately:
 
 ```text
 1. Bulk Img Vision
@@ -93,17 +106,16 @@ Press **`Tab`** or **`M`** on the menu to switch between **`Mode: Quick`** and *
 
 ---
 
-## REST API Server
+<details>
+<summary><b>📡 REST API Endpoints & Python SDK</b></summary>
 
-Start the API server:
+<br />
 
-```bash
-python api.py
-```
+Start the server with `python api.py` or `revisor.exe --api`:
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `GET` | `/` | Service status, supported modes, and capabilities |
+| `GET` | `/` | Service status, supported modes & capabilities |
 | `GET` | `/health` | Health check endpoint |
 | `POST` | `/search/image` | Analyze uploaded image (`target_lang`, `mode=quick\|detailed`) |
 | `POST` | `/search/url` | Analyze public image or webpage URL (`url`, `target_lang`, `mode`) |
@@ -113,35 +125,33 @@ python api.py
 | `POST` | `/task/create` | Create asynchronous analysis job |
 | `GET` | `/task/{task_id}` | Poll asynchronous job status & result |
 
----
-
-## Python API
-
 ```python
 import asyncio
 from revisor import ReVisor
 
 async def main():
     async with ReVisor() as client:
-        result = await client.search("img/test2.png", mode="detailed")
+        result = await client.search("img/test2.png", target_lang="Spanish", mode="detailed")
         print("Mode:", result.get("mode"))
         print("OCR:", result.get("ocr_text"))
+        print("Translated:", result.get("translated_text"))
         print("Overview:", result.get("ai_overview"))
-        print("Entities:", result.get("detected_entities"))
 
 asyncio.run(main())
 ```
 
+</details>
+
 ---
 
-## Support & Contact
+## Community & Support
 
 - **Discord Server**: https://discord.gg/PYfeSaDGPJ
 - **Contact**: [@sqnq](https://discord.com/users/987979957907116052)
 
 ### Buy Me A Coffee ☕
 
-**Litecoin (LTC)** — click the copy icon on the right:
+**Litecoin (LTC)** — click copy on the right:
 
 ```text
 LbDG5BE3foVsfK6JRsSc7UtBVX4DqYYKXN
